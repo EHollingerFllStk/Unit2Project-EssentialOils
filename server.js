@@ -3,16 +3,11 @@ const express = require("express");
 const app = express();
 require("dotenv").config();
 const mongoose = require("mongoose");
-// const Product = require("./models/products")
-// const Seed = require("./models/seedroute")
-// const methodOverride = require("method-override");
-// const productRouter = require("./controllers/productRouter");
+const Oils = require('./models/oils')
+
 
 //DATABASE CONFIGURATION
-mongoose.connect(process.env.DATABASE_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
+mongoose.connect(process.env.DATABASE_URL)
 
 const db = mongoose.connection
 db.on('error', (err) => console.log(err.message + ' is mongo not running?'));
@@ -22,19 +17,20 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 // Middleware
 // Body parser middleware: give us access to req.body
 app.use(express.urlencoded({ extended: true }));
-// app.use(methodOverride("_method"))
-// app.use('/products', productRouter)
-// app.use(express.static('public'))
+
 
 //ROUTES
 //INDEX
 //NEW
+
 //DELETE
 //UPDATE
 
 //CREATE
-app.post('/essoils', (req, res) => {
-    res.send(req.body)
+app.post('/oils', (req, res) => {
+    Oils.create(req.body, (error, createdOil) => {
+        res.send(createdOil)
+    })
 })
 
 
