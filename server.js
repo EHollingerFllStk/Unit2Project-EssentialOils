@@ -21,7 +21,23 @@ app.use(express.urlencoded({ extended: true }));
 
 //ROUTES
 //INDEX
+// app.get('/', (req, res) => {
+//     res.render('index.ejs')
+// })
+
+app.get('/oils', (req, res) => {
+    Oils.find({}, (error, allOils) => {
+        res.render('index.ejs', {
+            oils: allOils
+        })
+    })
+})
+
 //NEW
+app.get('/oils/new', (req, res) => {
+    res.render('new.ejs')
+})
+
 
 //DELETE
 //UPDATE
@@ -29,10 +45,17 @@ app.use(express.urlencoded({ extended: true }));
 //CREATE
 app.post('/oils', (req, res) => {
     Oils.create(req.body, (error, createdOil) => {
-        res.send(createdOil)
+        res.redirect('index.ejs')
     })
 })
 
+// app.get('/oils', (req, res) => {
+//     Oils.find({}, (error, allOils) => {
+//         res.render('index.ejs', {
+//             oils: allOils
+//         })
+//     })
+// })
 
 //EDIT
 
