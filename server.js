@@ -22,6 +22,19 @@ app.use(methodOverride("_method"))
 
 
 //ROUTES
+
+// SEED
+const oilSeed = require('./models/oilSeed.js');
+
+app.get('/oils/seed', (req, res) => {
+	Oils.deleteMany({}, (error, allOils) => {});
+
+	Oils.create(oilSeed, (error, data) => {
+		res.redirect('/oils');
+	});
+});
+
+
 //INDEX
 // app.get('/', (req, res) => {
 //     res.render('index.ejs')
