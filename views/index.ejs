@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="utf-8">
+
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Essential Oils</title>
 </head>
 
@@ -10,19 +12,19 @@
     <header>
 
         <h1>Find Healing With Essential Oils</h1>
-        <nav>
-            <ul>
+        <div class="container">
+            <p>
                 <% oils.forEach(oil=> { %>
-                    <li>
+                    <p>
                         <a href="/oils/<%=oil._id; %>">
                             <%=oil.name; %>
                         </a>
-                       
-                    </li>
+
+                    </p>
                     <% }) %>
-            </ul>
-        </nav>
-        <nav>
+            </p>
+        </div>
+        <nav class="new">
             <a href="/oils/new">Add a New Essential Oil</a>
         </nav>
     </header>

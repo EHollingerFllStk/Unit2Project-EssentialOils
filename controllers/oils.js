@@ -3,9 +3,6 @@ const express = require('express')
 const oilsRouter = express.Router()
 const Oils = require('../models/oils')
 
-
-
-
 //SEED
 const oilSeed = require('../models/oilSeed')
 oilsRouter.get('/seed', (req, res) => {
@@ -17,7 +14,7 @@ oilsRouter.get('/seed', (req, res) => {
 });
 
 //INDEX
-oilsRouter.get('/oils', (req, res) => {
+oilsRouter.get('/', (req, res) => {
     Oils.find({}, (error, allOils) => {
         res.render('index.ejs', {
             oils: allOils
@@ -77,3 +74,4 @@ oilsRouter.get('/:id', (req, res) => {
 })
 
 module.exports = oilsRouter;
+
