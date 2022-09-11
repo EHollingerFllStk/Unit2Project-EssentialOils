@@ -60,8 +60,13 @@ app.post('/oils', (req, res) => {
 //EDIT
 
 //SHOW
-
-
+app.get('/oils/:id', (req, res) => {
+    Oils.findById(req.params.id, (err, foundOil) => {
+        res.render('show.ejs', {
+            oil: foundOil,
+        })
+    })
+})
 
 
 
