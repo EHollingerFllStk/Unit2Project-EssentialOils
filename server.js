@@ -40,7 +40,6 @@ app.get('/oils/new', (req, res) => {
     res.render('new.ejs')
 })
 
-
 //DELETE
 app.delete("/oils/:id", (req, res) => {
     Oils.findByIdAndDelete(req.params.id, (err, foundOil) => {
@@ -49,6 +48,18 @@ app.delete("/oils/:id", (req, res) => {
 })
 
 //UPDATE
+app.put('/oils/:id', (req, res) => {
+    Oils.findByIdAndUpdate(req.params.id,
+        req.body,
+        {
+            new: true,
+        },
+        (error, updatedOil) => {
+            updatedOil.save()
+            res.redirect(`/oils/${req.params.id}`)
+
+        })
+})
 
 //CREATE
 app.post('/oils', (req, res) => {
@@ -57,15 +68,16 @@ app.post('/oils', (req, res) => {
     })
 })
 
-// app.get('/oils', (req, res) => {
-//     Oils.find({}, (error, allOils) => {
-//         res.render('index.ejs', {
-//             oils: allOils
-//         })
-//     })
-// })
-
 //EDIT
+app.get("/oils/:id/edit", (req, res) => {
+    Oils.findById(req.params.id, (err, foundOil) => {
+        res.render('edit.ejs', {
+            oil: foundOil
+        })
+    })
+})
+
+
 
 //SHOW
 app.get('/oils/:id', (req, res) => {

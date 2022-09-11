@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essential Oils</title>
+</head>
+
+<body>
+    <h1>Edit Essential Oil</h1>
+    <form action="/oils/<%=oil._id%>?_method=PUT" method="POST">
+        Name of Oil: <input type="text" name="name" value="<%=oil.name%>" /><br />
+        Image: <input type="text" name="img" value="<%=oil.img%>" /> <br />
+        Description: <input type="text" name="description" value="<%=oil.description%>" /><br />
+        Use: <input type="text" name="use" value="<%=oil.use%>" /><br />
+        <input type="submit" name="" value="Update Essential Oil" />
+    </form>
+
+    <body>
+
+</html>
