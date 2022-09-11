@@ -17,10 +17,7 @@
                         <a href="/oils/<%=oil._id; %>">
                             <%=oil.name; %>
                         </a>
-                        <form style="display:inline; margin-left:17px;" action="/oils/<%= oil._id %>?_method=DELETE" method="POST">
-                            <input type="submit" value="DELETE" />
-                        </form>
-                        <a href="/oils/<%=oil._id %>/edit">Edit</a>
+                       
                     </li>
                     <% }) %>
             </ul>

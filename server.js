@@ -1,10 +1,10 @@
 //DEPENDENCIES
 const express = require("express");
+const mongoose = require("mongoose");
 const methodOverride = require('method-override')
 const app = express();
 require("dotenv").config();
-const mongoose = require("mongoose");
-const Oils = require('./models/oils')
+//const Oils = require('./models/oils')
 
 
 //DATABASE CONFIGURATION
@@ -20,19 +20,21 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"))
 
+const oilsController = require('./controllers/oils')
+app.use('/oils', oilsController)
 
 //ROUTES
 
 // SEED
-const oilSeed = require('./models/oilSeed.js');
+//const oilSeed = require('./models/oilSeed.js');
 
-app.get('/oils/seed', (req, res) => {
-	Oils.deleteMany({}, (error, allOils) => {});
+// app.get('/oils/seed', (req, res) => {
+// 	Oils.deleteMany({}, (error, allOils) => {});
 
-	Oils.create(oilSeed, (error, data) => {
-		res.redirect('/oils');
-	});
-});
+// 	Oils.create(oilSeed, (error, data) => {
+// 		res.redirect('/oils');
+// 	});
+// });
 
 
 //INDEX
@@ -40,66 +42,64 @@ app.get('/oils/seed', (req, res) => {
 //     res.render('index.ejs')
 // })
 
-app.get('/oils', (req, res) => {
-    Oils.find({}, (error, allOils) => {
-        res.render('index.ejs', {
-            oils: allOils
-        })
-    })
-})
+// app.get('/oils', (req, res) => {
+//     Oils.find({}, (error, allOils) => {
+//         res.render('index.ejs', {
+//             oils: allOils
+//         })
+//     })
+// })
 
-//NEW
-app.get('/oils/new', (req, res) => {
-    res.render('new.ejs')
-})
+// //NEW
+// app.get('/oils/new', (req, res) => {
+//     res.render('new.ejs')
+// })
 
-//DELETE
-app.delete("/oils/:id", (req, res) => {
-    Oils.findByIdAndDelete(req.params.id, (err, foundOil) => {
-        res.redirect('/oils')
-    })
-})
+// //DELETE
+// app.delete("/oils/:id", (req, res) => {
+//     Oils.findByIdAndDelete(req.params.id, (err, foundOil) => {
+//         res.redirect('/oils')
+//     })
+// })
 
-//UPDATE
-app.put('/oils/:id', (req, res) => {
-    Oils.findByIdAndUpdate(req.params.id,
-        req.body,
-        {
-            new: true,
-        },
-        (error, updatedOil) => {
-            updatedOil.save()
-            res.redirect(`/oils/${req.params.id}`)
+// //UPDATE
+// app.put('/oils/:id', (req, res) => {
+//     Oils.findByIdAndUpdate(req.params.id,
+//         req.body,
+//         {
+//             new: true,
+//         },
+//         (error, updatedOil) => {
+//             updatedOil.save()
+//             res.redirect(`/oils/${req.params.id}`)
 
-        })
-})
+//         })
+// })
 
-//CREATE
-app.post('/oils', (req, res) => {
-    Oils.create(req.body, (error, createdOil) => {
-        res.redirect('index.ejs')
-    })
-})
+// //CREATE
+// app.post('/oils', (req, res) => {
+//     Oils.create(req.body, (error, createdOils) => {
+//         res.redirect('/oils')
+//     })
+// })
 
-//EDIT
-app.get("/oils/:id/edit", (req, res) => {
-    Oils.findById(req.params.id, (err, foundOil) => {
-        res.render('edit.ejs', {
-            oil: foundOil
-        })
-    })
-})
+// //EDIT
+// app.get("/oils/:id/edit", (req, res) => {
+//     Oils.findById(req.params.id, (err, foundOil) => {
+//         res.render('edit.ejs', {
+//             oil: foundOil
+//         })
+//     })
+// })
 
-
-
-//SHOW
-app.get('/oils/:id', (req, res) => {
-    Oils.findById(req.params.id, (err, foundOil) => {
-        res.render('show.ejs', {
-            oil: foundOil,
-        })
-    })
-})
+// //SHOW
+// app.get('/oils/:id', (req, res) => {
+//     Oils.findById(req.params.id, (err, foundOil) => {
+//         res.render('show.ejs', {
+//             oil: foundOil,
+//         })
+//     })
+// })
 
 
 
