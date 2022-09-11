@@ -1,5 +1,6 @@
 //DEPENDENCIES
 const express = require("express");
+const methodOverride = require('method-override')
 const app = express();
 require("dotenv").config();
 const mongoose = require("mongoose");
@@ -17,6 +18,7 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 // Middleware
 // Body parser middleware: give us access to req.body
 app.use(express.urlencoded({ extended: true }));
+app.use(methodOverride("_method"))
 
 
 //ROUTES
@@ -40,6 +42,12 @@ app.get('/oils/new', (req, res) => {
 
 
 //DELETE
+app.delete("/oils/:id", (req, res) => {
+    Oils.findByIdAndDelete(req.params.id, (err, foundOil) => {
+        res.redirect('/oils')
+    })
+})
+
 //UPDATE
 
 //CREATE
