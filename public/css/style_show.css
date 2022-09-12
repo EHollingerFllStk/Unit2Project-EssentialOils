@@ -1,0 +1,16 @@
+body {
+    background-size: cover;
+    height: 610px;
+    text-align: right;
+    
+}
+
+h1 {
+    font-size: 42px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
