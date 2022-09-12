@@ -29,13 +29,13 @@ h1 {
 
 p {
     float: left;
-    font-size: 24px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-family: 'Euphoria Script', cursive;
     font-style: italic;
     font-weight: 400;
     text-align: left; 
-    margin-top: 60px; 
-    margin-right: 800px;
+    margin-top: 350px; 
+    margin-right: 850px;
 }
 
 li {
