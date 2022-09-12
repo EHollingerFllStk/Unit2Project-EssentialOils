@@ -4,7 +4,12 @@
 <head>
     <meta charset="utf-8">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/css/style.css" />
+
     <title>Essential Oils</title>
 </head>
 
@@ -12,21 +17,23 @@
     <header>
 
         <h1>Find Healing With Essential Oils</h1>
+
+        <nav class="new">
+            <a href="/oils/new">Add a New Essential Oil</a>
+        </nav>
         <div class="container">
-            <p>
+            <ul>
                 <% oils.forEach(oil=> { %>
-                    <p>
+                    <li>
                         <a href="/oils/<%=oil._id; %>">
                             <%=oil.name; %>
                         </a>
 
-                    </p>
+                    </li>
                     <% }) %>
-            </p>
+            </ul>
         </div>
-        <nav class="new">
-            <a href="/oils/new">Add a New Essential Oil</a>
-        </nav>
+
     </header>
 </body>
 

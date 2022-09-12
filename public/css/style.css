@@ -3,31 +3,43 @@ body {
     background-size: cover;
     height: 610px;
     text-align: right;
+    
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 42px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     text-align: left;
     margin-top: 50px;
     margin-left: 50px;
 }
 
+li {
+    list-style: none;
+}
+
 .container {
     font-size: 20px;
     display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     text-align: left;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-end;
     max-width: 300px;
-    margin: auto;
+    margin: 10px auto;
+    padding: 0;
     position: absolute;
-    top: 100px;
+    top: 200px;
     right: 100px;
 }
 
 .new {
     font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -36,7 +48,7 @@ h1 {
     max-width: 300px;
     margin: auto;
     position: absolute;
-    top: 100px;
+    top: 200px;
     right: 100px;
 
 }
