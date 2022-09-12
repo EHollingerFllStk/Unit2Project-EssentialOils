@@ -15,11 +15,26 @@
 
 <body>
     <header>
-
-        <h1>Find Healing With Essential Oils</h1>
-
-
         <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="/oils">Home</a></li>
+                    <li><a href=""></a>About</li>
+                    <li><a href=""></a>Recipes</li>
+                    <li><a href=""></a>Blog</li>
+                    <li><a href=""></a>Contact</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container2">
+            <h1>Find Healing With Essential Oils</h1>
+            <p>Calmness is the cradle of power</p>
+            <p>-Josiah Gilbert Holland</p>         
+        </div>
+
+        <div class="container3">
+           
             <ul>
                 <% oils.forEach(oil=> { %>
                     <li>
@@ -31,7 +46,7 @@
                     <% }) %>
             </ul>
         </div>
-        
+
     </header>
     <div class="new">
         <a href="/oils/new">Add a New Essential Oil</a>
