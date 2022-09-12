@@ -7,41 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto:wght@300;400;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/style_show.css" />
     <title>
         <%=oil.name %>
     </title>
 </head>
+<div id="container">
+    <nav>
+        <ul>
+            <li><a href="/oils">Home</a></li>
+            <li><a href=""></a>About</li>
+            <li><a href=""></a>Recipes</li>
+            <li><a href=""></a>Blog</li>
+            <li><a href=""></a>Contact</li>
+        </ul>
+    </nav>
+</div>
 
 <body>
-    <nav>
-        <a href="/oils">Home</a>
-    </nav>
+    <div class="container2">
+        <h1>
+            <%=oil.name %>
+        </h1>
+        <img src="<%=oil.img%>"> <br />
+    </div>
+    <div class="container">
+        <h3>Description</h3>
+        <p>
+            <%= oil.description %>
+        </p>
+        <br />
+        <h3>Uses</h3>
+        <p>
+            <%= oil.use %>
+        </p>
+        <br />
 
-    
-    <h1>
-        <%=oil.name %>
-    </h1>
-    <img src="<%=oil.img%>"> <br />
-    Description:<p>
-        <%= oil.description %>
-    </p>
-    <br />
-    Uses:<p>
-        <%= oil.use %>
-    </p>
-    <br />
-
-    <section>
-        <form action="/oils/<%= oil._id %>?_method=DELETE" method="POST">
-            <input type="submit" value="DELETE" /> 
-        </form> 
-    </section>
-    <section>
-        <a href="/oils/<%=oil._id %>/edit">Edit</a>
-    </section>
-
+        <section>
+            <form action="/oils/<%= oil._id %>?_method=DELETE" method="POST">
+                <input type="submit" value="DELETE" />
+            </form>
+        </section>
+        <section>
+            <a href="/oils/<%=oil._id %>/edit">Edit</a>
+        </section>
+    </div>
 </body>
 
 </html>

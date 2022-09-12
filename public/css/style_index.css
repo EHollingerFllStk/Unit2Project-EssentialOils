@@ -24,7 +24,6 @@ h1 {
     text-align: left; 
     margin-top: 60px; 
     margin-right: 800px;
-
 }
 
 p {
@@ -99,7 +98,7 @@ nav a:hover {
 .new {
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: bold;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -109,6 +108,6 @@ nav a:hover {
     margin: auto;
     position: absolute;
     top: 700px;
-    right: 100px;
+    right: 80px;
 
 }
