@@ -9,22 +9,8 @@ body {
   h1 {
     color: #66BFBF;
     font-size: 562.5%;
-    margin: 50px auto 50px auto;
+    margin: 50px auto 0 auto;
     font-family: 'Sacramento', cursive;
-  }
-  
-  h3 {
-    color: #11999E;
-    font-family: "Sacremento", sans-serif;
-  }
-
-  img {
-    border-radius: 50%;
-    border: 2px solid #c1c6c9;
-  }
-  
-  p {
-    line-height: 2;
   }
   
   a {
@@ -58,7 +44,7 @@ body {
   
   .content-row {
     width: 50%;
-    margin: 50px auto 50px auto;
+    margin: 100px auto 100px auto;
     text-align: left;
     line-height: 2;
   }
@@ -120,7 +106,32 @@ nav a:hover {
 }
 
 
-
+.btn {
+    background: #ebe4ca;
+    background-image: -webkit-linear-gradient(top, #ebe4ca, #ccc1af);
+    background-image: -moz-linear-gradient(top, #ebe4ca, #ccc1af);
+    background-image: -ms-linear-gradient(top, #ebe4ca, #ccc1af);
+    background-image: -o-linear-gradient(top, #ebe4ca, #ccc1af);
+    background-image: linear-gradient(to bottom, #ebe4ca, #ccc1af);
+    -webkit-border-radius: 16;
+    -moz-border-radius: 16;
+    border-radius: 16px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #c1c6c9;
+    background-image: -webkit-linear-gradient(top, #c1c6c9, #747b80);
+    background-image: -moz-linear-gradient(top, #c1c6c9, #747b80);
+    background-image: -ms-linear-gradient(top, #c1c6c9, #747b80);
+    background-image: -o-linear-gradient(top, #c1c6c9, #747b80);
+    background-image: linear-gradient(to bottom, #c1c6c9, #747b80);
+    text-decoration: none;
+  }
   .btn {
     background: #ebe4ca;
     background-image: -webkit-linear-gradient(top, #ebe4ca, #ccc1af);
