@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto:wght@300;400;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/css/style_show.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto:wght@300;400;900&family=Sacramento&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/css/style_show.css" />
     <title>
         <%=oil.name %>
     </title>
@@ -46,16 +46,16 @@
         </p>
         <br />
     
-        <section>
+        <section id="section">
             <form action="/oils/<%= oil._id %>?_method=DELETE" method="POST">
-                <input type="submit" value="DELETE" />
-            </form>
+                <input class="btn" type="submit" value="DELETE" />
+            </form> 
         </section>
         <section id="section">
-            <a href="/oils/<%=oil._id %>/edit"><button type="button">Edit</button></a>
+            <a href="/oils/<%=oil._id %>/edit"><button class="btn" type="button">EDIT</button></a>
         </section>
     </div>
-    <div class="bottmon-container"><a class="footer-link" href="https://www.linkedin.com/in/elizabeth-hollinger-dpt-31683b128/">LinkedIn</a>
+    <div class="bottom-container"><a class="footer-link" href="https://www.linkedin.com/in/elizabeth-hollinger-dpt-31683b128/">LinkedIn</a>
         <a class="footer-link" href="https://github.com/EHollingerFllStk">GitHub</a>
         <a class="footer-link" href="https://www.ncbi.nlm.nih.gov">Evidence-based Content</a>
         <p class="copyright">©2022 Elizabeth Hollinger</p>
