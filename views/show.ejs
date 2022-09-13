@@ -14,46 +14,54 @@
         <%=oil.name %>
     </title>
 </head>
-<div id="container">
+<div class="top-container">
     <nav>
         <ul>
             <li><a href="/oils">Home</a></li>
             <li><a href=""></a>About</li>
             <li><a href=""></a>Recipes</li>
-            <li><a href=""></a>Blog</li>
-            <li><a href=""></a>Contact</li>
+            <li><a href="https://github.com/EHollingerFllStk">Contact</a></li>
+            <li><a href=""></a></li>
         </ul>
     </nav>
 </div>
 
 <body>
-    <div class="container2">
+    <div class="middle-container" id="oil">
         <h1>
-            <%=oil.name %>
+            <%=oil.name %> </br>
+        
+            <img src="<%=oil.img%>"> 
         </h1>
-        <img src="<%=oil.img%>"> <br />
+       <br />
     </div>
-    <div class="container">
+    <div class="content-row">
         <h3>Description</h3>
-        <p>
-            <%= oil.description %>
+        <p style="font-size: 18px;"> <%= oil.description %> 
         </p>
         <br />
         <h3>Uses</h3>
-        <p>
+        <p style="font-size: 18px;">
             <%= oil.use %>
         </p>
         <br />
-
+    
         <section>
             <form action="/oils/<%= oil._id %>?_method=DELETE" method="POST">
                 <input type="submit" value="DELETE" />
             </form>
         </section>
-        <section>
-            <a href="/oils/<%=oil._id %>/edit">Edit</a>
+        <section id="section">
+            <a href="/oils/<%=oil._id %>/edit"><button type="button">Edit</button></a>
         </section>
     </div>
+    <div class="bottmon-container"><a class="footer-link" href="https://www.linkedin.com/in/elizabeth-hollinger-dpt-31683b128/">LinkedIn</a>
+        <a class="footer-link" href="https://github.com/EHollingerFllStk">GitHub</a>
+        <a class="footer-link" href="https://www.ncbi.nlm.nih.gov">Evidence-based Content</a>
+        <p class="copyright">©2022 Elizabeth Hollinger</p>
+      </div>
+    </body>
+
 </body>
 
 </html>

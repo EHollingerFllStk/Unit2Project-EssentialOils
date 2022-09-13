@@ -12,6 +12,7 @@ module.exports = [{
     description: 'oil distilled flowers of lavender plant',
     img: 'https://hips.hearstapps.com/hmg-prod/images/bottle-of-lavender-essential-oil-with-fresh-royalty-free-image-920637186-1547242978.jpg?crop=0.668xw:1.00xh;0.240xw,0&resize=640:*',
     use: 'calms mood, stops hair loss, eases motion sickness',
-}
+},
+
 
 ]
