@@ -13,20 +13,6 @@ body {
     font-family: 'Sacramento', cursive;
   }
   
-  h3 {
-    color: #11999E;
-    font-family: "Sacremento", sans-serif;
-  }
-
-  img {
-    border-radius: 50%;
-    border: 2px solid gray;
-  }
-  
-  p {
-    line-height: 2;
-  }
-  
   a {
     color: #354259;
     font-family: "Montserrat", sans-serif;
@@ -56,20 +42,14 @@ body {
     padding: 50px 0 20px;
   }
   
-  .content-row {
+.content-row {
     width: 50%;
     margin: 100px auto 100px auto;
     text-align: left;
     line-height: 2;
   }
   
-  .intro {
-    width: 30%;
-    margin: 40px auto 60px;;
-  }
-  
- 
-  #section {
+#section {
     width: 40%
     margin: 40px auto;
     display: inline-block;
