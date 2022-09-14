@@ -9,7 +9,6 @@ body {
   h1 {
     color: #66BFBF;
     font-size: 562.5%;
-    margin: 50px auto 50px auto;
     font-family: 'Sacramento', cursive;
   }
   
@@ -47,7 +46,7 @@ body {
   }
   
   .middle-container {
-    margin: 100px 0;
+    margin: 100px 0 0 0;
   }
   
   .bottom-container {
@@ -58,19 +57,13 @@ body {
   
   .content-row {
     width: 50%;
-    margin: 50px auto 50px auto;
+    margin: -15px auto;
     text-align: left;
-    line-height: 2;
+    /* line-height: 2; */
   }
-  
-  .intro {
-    width: 30%;
-    margin: 40px auto 60px;;
-  }
-  
  
   #section {
-    width: 40%
+    width: 40%;
     margin: 40px auto;
     display: inline-block;
   }
@@ -83,7 +76,6 @@ body {
   
   header {
     background: opaque;
-
 }
 
 header::after {
