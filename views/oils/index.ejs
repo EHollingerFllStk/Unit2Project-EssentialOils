@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto:wght@300;400;900&family=Sacramento&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style_index.css" />
+
+    <title>Essential Oils</title>
+</head>
+<div class="top-container">
+    <nav>
+        <ul>
+            <li><a href="/oils">Home</a></li>
+            <li><a href=""></a>About</li>
+            <li><a href=""></a>Recipes</li>
+            <li><a href="https://github.com/EHollingerFllStk">Contact</a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </nav>
+</div>
+
+        <div class="middle-container">
+            <h1>Find Healing With Essential Oils</h1>
+            
+            <p>Calmness is the cradle of power <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Josiah Gilbert Holland</p>
+        </div>
+
+        <div class="content-row">
+
+            <ul>
+                <li style="text-decoration: bold; font-size: larger;">Essential Oils</li>
+                <% oils.forEach(oil=> { %>
+                    <li>
+                        <a href="/oils/<%=oil._id; %>">
+                            <%=oil.name; %>
+                        </a>
+
+                    </li>
+                    <% }) %>
+            </ul>
+        </div>
+
+    </header>
+    <div class="new">
+        <a class="btn" href="/oils/new">Add a New Essential Oil</a>
+    </div>
+    
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/elizabeth-hollinger-dpt-31683b128/">LinkedIn</a>
+        <a class="footer-link" href="https://github.com/EHollingerFllStk">GitHub</a>
+        <a class="footer-link" href="https://www.ncbi.nlm.nih.gov">Evidence-based Content</a>
+        <p class="copyright">©2022 Elizabeth Hollinger</p>
+  </div>
+</body>
+
+
+</html>

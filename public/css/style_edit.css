@@ -17,7 +17,7 @@ body {
   
   a {
     color: #354259;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 10px 20px;
     text-decoration: none;
   }
@@ -30,12 +30,13 @@ body {
     background-color: #66BFBF;
     position: relative;
     padding: 0 0 25px 20px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
     
   }
   
   .middle-container {
     margin: 100px 0;
+    font-family: "Roboto", sans-serif;
   }
   
   .bottom-container {
@@ -47,8 +48,11 @@ body {
   .content-row {
     width: 50%;
     margin: 100px auto 100px auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
     text-align: left;
     line-height: 2;
+    color: 
   }
   
   .intro {

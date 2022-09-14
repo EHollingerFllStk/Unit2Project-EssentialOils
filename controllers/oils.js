@@ -16,7 +16,7 @@ oilsRouter.get('/seed', (req, res) => {
 //INDEX
 oilsRouter.get('/', (req, res) => {
     Oils.find({}, (error, allOils) => {
-        res.render('index.ejs', {
+        res.render('oils/index.ejs', {
             oils: allOils
         })
     })
@@ -24,7 +24,7 @@ oilsRouter.get('/', (req, res) => {
 
 //NEW
 oilsRouter.get('/new', (req, res) => {
-    res.render('new.ejs')
+    res.render('oils/new.ejs')
 })
 
 //DELETE
@@ -58,7 +58,7 @@ oilsRouter.post('/', (req, res) => {
 //EDIT
 oilsRouter.get("/:id/edit", (req, res) => {
     Oils.findById(req.params.id, (err, foundOil) => {
-        res.render('edit.ejs', {
+        res.render('oils/edit.ejs', {
             oil: foundOil
         })
     })
@@ -67,7 +67,7 @@ oilsRouter.get("/:id/edit", (req, res) => {
 //SHOW
 oilsRouter.get('/:id', (req, res) => {
     Oils.findById(req.params.id, (err, foundOil) => {
-        res.render('show.ejs', {
+        res.render('oils/show.ejs', {
             oil: foundOil,
         })
     })
