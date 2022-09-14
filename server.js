@@ -24,6 +24,19 @@ app.use(express.static('public'))
 const oilsController = require('./controllers/oils')
 app.use('/oils', oilsController)
 
+const recipesController = require('./controllers/recipes.js');
+app.use('/recipes', recipesController);
+
+
+//Routes
+
+//index
+// app.get('recipes/', (req, res) => {
+//     res.render('index.ejs');
+// });
+
+
+
 // LISTENER
 const PORT = process.env.PORT;
 app.listen(PORT, () => {

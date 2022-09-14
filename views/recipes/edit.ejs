@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
         <meta charset="UTF-8" />
@@ -8,11 +8,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto:wght@300;400;900&family=Sacramento&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="/css/style_index.css" />
-
-    <title>Essential Oil Recipes</title>
-</head>
+        <link rel="stylesheet" href="/css/style_edit.css" />
+        
+        <title>Essential Oils</title>
 <div class="top-container">
     <nav>
         <ul>
@@ -24,41 +22,28 @@
         </ul>
     </nav>
 </div>
-
-        <div class="middle-container">
-            <h1>Find Recipes</h1>
-            
-            <p>Take Time to Make Your Soul Happy <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Anon</p>
-        </div>
-
-        <div class="content-row">
-
-            <main>
-                <h2>List of Recipes</h2>
-                <ul>
-                    <% for(let i = 0; i < recipes.length; i++){ %>
-                    <li>
-                        <a href="/recipes/<%=recipes[i]._id%>"><%= recipes[i].name %></a>
-                    </li>
-                    <% } %>
-                </ul>
-                
-            </main>
-        </div>
-
-    </header>
-    <div class="new">
-        <a class="btn" href="/recipes/new">Add New Recipe</a>
+    </head>
+<body>
+    <div class="middle-container" id="oil">
+        <h1>
+            Edit Recipe  
+        </h1>
+       <br />
     </div>
-    
+    <div class="content-row">
+        <form action="/recipes/<%=recipe._id%>?_method=PUT" method="POST">
+            Recipe <input type="text" name="name" value="<%=recipe.name%>" /><br />
+            ingredients <input type="text" name="ingredients" value="<%=recipe.ingredients%>" /><br />
+            Use <input type="text" name="use" value="<%=recipe.use%>" /><br />
+        <input class="btn" type="submit" name="" value="Update Recipe" />
+        </form>
+    </div>
     <div class="bottom-container">
         <a class="footer-link" href="https://www.linkedin.com/in/elizabeth-hollinger-dpt-31683b128/">LinkedIn</a>
         <a class="footer-link" href="https://github.com/EHollingerFllStk">GitHub</a>
         <a class="footer-link" href="https://www.ncbi.nlm.nih.gov">Evidence-based Content</a>
         <p class="copyright">©2022 Elizabeth Hollinger</p>
   </div>
-</body>
-
+    <body>
 
 </html>
