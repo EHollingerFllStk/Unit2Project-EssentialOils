@@ -1,5 +1,6 @@
 body {
-    background-color: #C2DED1;
+    background-image: url("https://cdn.pixabay.com/photo/2017/05/30/19/42/skincare-2357980_960_720.jpg");
+    background-size: cover;
     color: #40514e;
     margin: 0;
     text-align: center;
@@ -7,7 +8,7 @@ body {
   }
   
   h1 {
-    color: #66BFBF;
+    color: #354259;
     font-size: 562.5%;
     margin: 50px auto 0 auto;
     font-family: 'Sacramento', cursive;
@@ -25,7 +26,7 @@ body {
   }
   
   .top-container {
-    background-color: #66BFBF;
+    background-color: #ECE5C7;
     position: relative;
     padding: 0 0 25px 20px;
     font-family: "Montserrat", sans-serif;
@@ -37,7 +38,7 @@ body {
   }
   
   .bottom-container {
-    background-color: #66BFBF;
+    background-color: #ECE5C7;
     margin-top: 50px;
     padding: 50px 0 20px;
   }
@@ -47,6 +48,7 @@ body {
     margin: 100px auto 100px auto;
     text-align: left;
     line-height: 2;
+    word-wrap: break-word;
   }
   
 #section {
@@ -99,18 +101,6 @@ nav a:hover {
     color: #fff
 }
 
-fieldset {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 20px 0;
-}
-legend {
-  padding: 0px 10px;
-  font-family: 'Oswald';
-  font-weight: 500;
-  color: var(--purple);
-}
 label {
   font-family: 'Oswald';
   font-weight: 200;

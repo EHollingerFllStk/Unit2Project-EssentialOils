@@ -1,5 +1,6 @@
 body {
-    background-color: #C2DED1;
+    background-image: url("https://media.istockphoto.com/photos/spa-background-picture-id1154618066?k=20&m=1154618066&s=612x612&w=0&h=E-F8bhNssH4H3Eq-nAkFYieGXqTOYFEsODE0g3PrkLA=");
+    background-size: cover;
     color: #40514e;
     margin: 0;
     text-align: center;
@@ -10,7 +11,8 @@ body {
     color: #66BFBF;
     font-size: 562.5%;
     margin: 50px auto 0 auto;
-    font-family: 'Sacramento', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
   }
   
   a {
@@ -105,6 +107,21 @@ nav a:hover {
     color: #fff
 }
 
+label {
+  font-family: 'Oswald';
+  font-weight: 200;
+  color: var(--bright-orange);
+  display: block;
+}
+
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid var(--light-green);
+  border-radius: 5px;
+}
 
 .btn {
     background: #ebe4ca;
