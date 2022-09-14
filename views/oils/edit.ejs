@@ -1,27 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto:wght@300;400;900&family=Sacramento&display=swap" rel="stylesheet">
+    <%- include('../partials/head.ejs') %>
         <link rel="stylesheet" href="/css/style_edit.css" />
         
         <title>Essential Oils</title>
-<div class="top-container">
-    <nav>
-        <ul>
-            <li><a href="/oils">Home</a></li>
-            <li><a href=""></a>About</li>
-            <li><a href=""></a>Recipes</li>
-            <li><a href="https://github.com/EHollingerFllStk">Contact</a></li>
-            <li><a href=""></a></li>
-        </ul>
-    </nav>
-</div>
+        <%- include('../partials/nav.ejs') %>
     </head>
 <body>
     <div class="middle-container" id="oil">
@@ -39,12 +23,7 @@
         <input class="btn" type="submit" name="" value="Update Essential Oil" />
         </form>
     </div>
-    <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/elizabeth-hollinger-dpt-31683b128/">LinkedIn</a>
-        <a class="footer-link" href="https://github.com/EHollingerFllStk">GitHub</a>
-        <a class="footer-link" href="https://www.ncbi.nlm.nih.gov">Evidence-based Content</a>
-        <p class="copyright">©2022 Elizabeth Hollinger</p>
-  </div>
+    <%- include('../partials/footer.ejs')%>
     <body>
 
 </html>
