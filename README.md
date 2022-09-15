@@ -11,3 +11,5 @@ This app allows the users to log essential oils and associated data, and create 
        *Also known to be used in Chinese and Indian medicine between 3000 and 2000 BC. Later used by Greeks around 500 BC.
        
        * "In the 18th and 19th centuries, chemists documented the active components of medicinal plants and identified many substances such as caffeine, quinine, morphine, and atropine, which were considered to play an important role in their biological effects In the 18th and 19th centuries, chemists documented the active components of medicinal plants and identified many substances such as caffeine, quinine, morphine, and atropine, which were considered to play an important role in their biological effects” (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5694587/).
+
+https://cdn.shopify.com/s/files/1/0681/8649/articles/History_of_Essential_oils_1400x.progressive.jpg?v=1519517144
