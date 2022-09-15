@@ -23,4 +23,14 @@ MONGODB
 Postman
 EJS
 Mongoose
+JavaScript
+HTML
+CSS
+
+## Getting Started ##
+
+## Future Enhancements ##
+*Have a login feature for users
+*Use a scroll feature as the item list becomes longer
+
 
