@@ -15,7 +15,7 @@ This app allows the users to log essential oils and associated data, and create 
 
 ## Screenshots ##
 
-![](public/css/images/scrnshot1.png)
+![Screen shot of Essential Oils Page](public/css/images/scrnshot1.png)
 
 
 
