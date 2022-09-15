@@ -1,10 +1,10 @@
 //SEED
 
 module.exports = [{
-    name: 'Eucalytus',
+    name: 'Eucalyptus',
     description: 'oil distilled from leaves of eucalyptus plant',
     img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOc2_5hkY9gd9oPZoz2XsvIiovbUV_SdIGBXBJXwQgbw&s',
-    use: 'improve respiratory problems, mosquito repellant, arthrisi pain',
+    use: 'improve respiratory problems, mosquito repellant, arthritis pain',
 
 },
 {

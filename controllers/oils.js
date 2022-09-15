@@ -6,7 +6,7 @@ const Oils = require('../models/oils')
 //SEED
 const oilSeed = require('../models/oilSeed')
 oilsRouter.get('/seed', (req, res) => {
-	Oils.deleteMany({}, (error, allOils) => {});
+	// Oils.deleteMany({}, (error, allOils) => {});
 
 	Oils.create(oilSeed, (error, data) => {
 		res.redirect('/oils');
