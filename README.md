@@ -19,3 +19,8 @@ This app allows the users to log essential oils and associated data, and create 
 
 
 ## Technologies Used ##
+MONGODB
+Postman
+EJS
+Mongoose
+
