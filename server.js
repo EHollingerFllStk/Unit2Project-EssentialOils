@@ -20,6 +20,7 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"))
 app.use(express.static('public'))
+app.use(express.json())
 
 const oilsController = require('./controllers/oils')
 app.use('/oils', oilsController)
