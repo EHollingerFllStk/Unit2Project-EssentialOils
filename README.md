@@ -14,7 +14,7 @@ This app allows the users to log essential oils and associated data, and create 
        * “In the 18th and 19th centuries, chemists documented the active components of medicinal plants and identified many substances such as caffeine, quinine, morphine, and atropine, which were considered to play an important role in their biological effects In the 18th and 19th centuries, chemists documented the active components of medicinal plants and identified many substances such as caffeine, quinine, morphine, and atropine, which were considered to play an important role in their biological effects” (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5694587/). 
 
 ## Screenhots ##
-
+![](public/css/images/Screen Shot 2022-09-15 at 1.38.32 PM.png)
 
 
 
@@ -32,5 +32,6 @@ CSS
 ## Future Enhancements ##
 *Have a login feature for users
 *Use a scroll feature as the item list becomes longer
+
 
 
