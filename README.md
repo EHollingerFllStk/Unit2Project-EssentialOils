@@ -33,15 +33,16 @@ Image of Show Page Recipes
 
 
 ## Technologies Used ##
-MONGODB
-Postman
-EJS
-Mongoose
-JavaScript
-HTML
-CSS
+MONGODB  
+Postman  
+EJS  
+Mongoose  
+JavaScript  
+HTML  
+CSS  
 
 ## Getting Started ##
+https://essoils.herokuapp.com/
 
 ## Future Enhancements ##
 *Have a login feature for users
