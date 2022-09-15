@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const methodOverride = require('method-override')
 const app = express();
 require("dotenv").config();
-//const Oils = require('./models/oils')
+const Oils = require('./models/oils')
 
 
 //DATABASE CONFIGURATION
