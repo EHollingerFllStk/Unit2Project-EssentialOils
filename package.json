@@ -1,7 +1,7 @@
 {
   "name": "essoils",
   "version": "1.0.0",
-  "description": "",
+  "description": "This app allows the users to log essential oils and associated data, and create and store essential oil recipes.  It is designed for naturopathic physicians, integrative physicians, massage therapists and others in the health and beauty fields.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,6 +14,15 @@
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "method-override": "^3.0.0",
+    "mongoos": "^0.0.1-security",
     "mongoose": "^6.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EHollingerFllStk/Unit2Project-EssentialOils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EHollingerFllStk/Unit2Project-EssentialOils/issues"
+  },
+  "homepage": "https://github.com/EHollingerFllStk/Unit2Project-EssentialOils#readme"
 }
