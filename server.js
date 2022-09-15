@@ -11,9 +11,7 @@ const Oils = require('./models/oils')
 mongoose.connect(process.env.DATABASE_URL)
 
 
-app.get('/', (req, res) => {
-    res.render('index.ejs')
-})
+
 
 const db = mongoose.connection
 db.on('error', (err) => console.log(err.message + ' is mongo not running?'));
@@ -35,11 +33,10 @@ app.use('/recipes', recipesController);
 
 
 //Routes
-
-//index
 app.get('/', (req, res) => {
-    res.render('index.ejs');
-});
+    res.render('index.ejs')
+})
+
 
 
 
