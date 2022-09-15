@@ -31,9 +31,9 @@ app.use('/recipes', recipesController);
 //Routes
 
 //index
-// app.get('recipes/', (req, res) => {
-//     res.render('index.ejs');
-// });
+app.get('/', (req, res) => {
+    res.render('index.ejs');
+});
 
 
 
