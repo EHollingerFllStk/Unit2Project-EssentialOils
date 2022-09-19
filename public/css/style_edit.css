@@ -181,4 +181,13 @@ input {
     text-decoration: none;
     border: none;
   }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
     
+}
